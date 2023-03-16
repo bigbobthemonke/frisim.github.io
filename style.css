@@ -1,0 +1,270 @@
+/* Set global styles */
+html {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    padding-left: 540px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-left: 216px;
+    padding-top: 20px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Style the main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #FBB935;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Style the sections */
+#indhold,
+#spillets-formÃ¥l,
+#forberedelse,
+#sÃ¥dan-spilles-spillet,
+#sÃ¥dan-vindes-spillet {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+
+#indhold h2:before,
+#spillets-formÃ¥l h2:before,
+#forberedelse h2:before,
+#sÃ¥dan-spilles-spillet h2:before,
+#sÃ¥dan-vindes-spillet h2:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 30px;
+    margin-top: -30px;
+    border-bottom: 3px solid #333;
+}
+
+#sÃ¥dan-spilles-spillet h3:before,
+#sÃ¥dan-vindes-spillet h3:before,
+#forberedelse h3:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 20px;
+    margin-top: -20px;
+    border-bottom: 2px solid #333;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* Header */
+
+
+.header__1 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 10%;
+background-color: #1d1d1f;
+max-width: 100%;
+}
+
+.logo__1 {
+cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+font-weight: 500;
+color: #edf0f1;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.nav__links {
+list-style: none;
+display: flex;
+text-transform: uppercase;
+font-family: Saira Extra Condensed;
+transition: 0.1s;
+font-size: 25px;
+line-height: 25px;
+}
+
+.nav__links li {
+padding: 0px 20px;
+}
+
+.nav__links li a {
+transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+color: #FBB935;
+}
+
+.cta {
+font-family: Saira Extra Condensed;
+font-size: 20px;
+padding: 9px 25px;
+background-color: #FBB935;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition: background-color 0.3s ease 0s;
+text-transform: uppercase;
+
+}
+
+.cta:hover {
+background-color: #fbb935c9;
+}
+
+/* Mobile Nav */
+
+.menu {
+display: none;
+font-family: Saira Extra Condensed;
+padding: 9px 25px;
+background-color: #fbb93500;
+border: none;
+border-radius: 0px;
+cursor: pointer;
+transition: background-color 0.3s ease 0s;
+text-transform: uppercase;
+}
+
+.overlay {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+background-color: #1d1d1f;
+overflow-x: hidden;
+transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+width: 100%;
+}
+
+.overlay__content {
+display: flex;
+height: 100%;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-family: Saira Extra Condensed;
+}
+
+.overlay a {
+padding: 15px;
+font-size: 36px;
+display: block;
+transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+color: #FBB935;
+}
+.overlay .close {
+position: absolute;
+top: 5px;
+right: 80px;
+font-size: 60px;
+color: #FBB935;
+}
+
+@media screen and (max-height: 450px) {
+.overlay a {
+  font-size: 20px;
+}
+.overlay .close {
+  font-size: 40px;
+  top: -20px;
+  right: 5px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+.nav__links,
+.cta {
+  display: none;
+}
+.menu {
+  display: initial;
+}
+}
+
+  /* Header */
+
+
+
+  
